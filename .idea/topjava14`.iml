@@ -17,8 +17,9 @@
     </facet>
     <facet type="Spring" name="Spring">
       <configuration>
-        <fileset id="fileset" name="Spring App" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/spring/spring-app.xml</file>
+        <fileset id="fileset2" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/resources/spring/spring-app.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/resources/spring/spring-db.xml</file>
         </fileset>
       </configuration>
     </facet>
