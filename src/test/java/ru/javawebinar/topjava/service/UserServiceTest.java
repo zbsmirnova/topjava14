@@ -20,11 +20,11 @@ import java.util.List;
 import static ru.javawebinar.topjava.UserTestData.*;
 
 @ContextConfiguration({
-        "classpath:resources/spring/spring-app.xml",
-        "classpath:resources/spring/spring-db.xml"
+        "classpath:spring/spring-app.xml",
+        "classpath:spring/spring-db.xml"
 })
 @RunWith(SpringRunner.class)
-@Sql(scripts = "classpath:resources/db/populateDB.sql", config = @SqlConfig(encoding = "UTF-8"))
+@Sql(scripts = "classpath:db/populateDB.sql", config = @SqlConfig(encoding = "UTF-8"))
 public class UserServiceTest {
 
     static {
@@ -56,7 +56,7 @@ public class UserServiceTest {
     }
 
     @Test(expected = NotFoundException.class)
-    public void notFoundDelete() throws Exception {
+    public void deletedNotFound() throws Exception {
         service.delete(1);
     }
 
